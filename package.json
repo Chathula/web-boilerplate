@@ -6,8 +6,8 @@
   "author": "Chathula Sampath <schathula@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.js --out-dir prod"
+    "start": "rm -rf dist && parcel src/index.html",
+    "build": "rm -rf prod && parcel build src/index.js --out-dir prod"
   },
   "dependencies": {
     "autoprefixer": "^8.0.0",
